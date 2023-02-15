@@ -1,0 +1,568 @@
+
+/*Ce fichier CSS contient toutes les classes du site, il sera certainement amené dans le futur à être divisé afin d'améliorer la visibilité et la lisibilité du fichier.*/
+/*Une grande partie des classes et identifiants CSS permettennt d'aligner les divisions en HTML, notamment avec le display:flex et la flex-direction.*/
+/*A l'aide de height et width, nous dimensionnons la taille des images et des divisions. */
+
+
+/*Ici nous changeons la couleurs d'arrière plan du body, c'est à dire de la page entière.*/
+body {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 1px;
+    background-color: rgb(242, 235, 226);
+}
+
+.findepage {
+    background-color: rgba(20,72,83,0.9);
+    color: white;
+  }
+  
+  .firstbox {
+    display:flex;
+    flex-direction: column;
+  }
+  
+  .bandeau {
+    display:flex;
+    background-color: rgb(20,72,83);
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 20px;
+    font-size: 125%;
+  }
+
+#imagetop {
+    height: 100px;
+}
+  
+  .middle {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  #menugauche {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    background-color: rgb(20,72,83);
+    border-radius: 2%;
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  
+    color: white;
+    
+  }
+
+a {text-decoration: none;}
+a:link {
+  color: white;
+  }
+  .menulink:hover {
+    color: rgb(237, 67, 5);
+  }
+  
+  a:visited {
+    color: whitesmoke;
+  }
+  
+
+  
+  .centrer {
+    text-align: center;
+  }
+  
+  
+  
+  #topmenu {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu_vert {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;    
+    justify-content: center;
+  }
+  
+  .menu_vert li {
+    display: flex;
+    float: left;
+    justify-content: space-between;
+  }
+  
+  .bar_navig {
+    display: flex;
+    text-align: center;
+    padding: 8px;
+    background-color: rgb(20,72,83);
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .bar_navig li {
+    list-style-type: none;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  
+  #imagelogo {
+    height: 100px;
+  }
+  
+  #contact{
+    background-color: whitesmoke;
+    padding-left: 10px;
+    margin-right: 3%;
+    padding-right: 10px;
+    padding-top: 2%;
+    border-radius: 2%;
+    padding-bottom: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 40%;
+  }
+  #sexe {
+    align-items: baseline;
+    vertical-align: bottom;
+  }
+  
+  input:invalid {
+    border: red solid 3px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  nav {
+    text-align: center;
+    display: flex;
+   
+  }
+  
+  .bar_navig > li {
+    float: left;
+    color: #e298e1;
+    height: 40px;
+    line-height: 40px;
+    background: rgb(20,72,83);
+    cursor: pointer;
+    font-size: 15px;
+  }
+  .sub-menu {
+    transform: scale(0);
+    transform-origin: top center;
+    transition: all 300ms ease-in-out;
+  }
+  .sub-menu li {
+    font-size: 14px;
+    background: rgb(20,72,83);
+    padding-left: 3px;
+    padding-right: 3px;
+    width: 150px;
+    color: white;
+    border-bottom: 1px solid rgb(20,72,83);
+    transform: scale(0);
+    transform-origin: top center;
+    transition: all 300ms ease-in-out;
+  }
+  .sub-menu li:last-child {
+    border-bottom: 0;
+  }
+  .sub-menu li:hover {
+    background: black;
+  }
+  .bar_navig > li:hover .sub-menu li {
+    transform: scale(1);
+  }
+  .bar_navig > li:hover .sub-menu {
+    transform: scale(1);
+  }
+
+
+#message {
+    background-color: whitesmoke;
+    padding-left: 10px;
+    margin-right: 3%;
+    padding-right: 10px;
+    padding-top: 2%;
+    border-radius: 2%;
+    padding-bottom: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 40%;
+}
+
+.background {
+  display: inline-block;
+  background: #568a9bc3;
+  width: 160px;
+}
+
+.background a {
+  display: block;
+  padding: 10px 20px;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+
+.background div {
+  position: absolute;
+  display: block;
+  width: 0%;
+  height: 100%;
+  top:0;
+  left: 0;
+  background: rgb(20,72,83);
+  z-index: 1;
+  overflow: hidden;
+  transition: .8s all ease;
+}
+
+.background:hover div {
+  width: 100%;
+}
+
+.background span {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  width: 123px;
+  top: 0;
+  left: 0;
+  display: block;
+  text-align: center;
+  height: 100%;
+  padding: 10px 0;
+}
+
+#petittexte {
+    font-size: 60%;
+    margin-bottom: 5px;
+}
+
+#connexionetinscription{
+    display: flex;
+    flex-direction: column;
+}
+
+.caddy {
+    max-height: 20px;
+}
+
+.pagelangue {
+    
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    
+
+}
+
+.imglangue {
+  width: 100% ;
+  margin-bottom: 30px;
+  
+}
+
+.titrepage {
+    margin-bottom: 10px;
+    font-size: 301%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+  }
+
+.marge{
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.texteindiv {
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.image-ronde{
+  width : 300px; 
+  height : 300px;
+  border: none;
+  -moz-border-radius : 50%;
+  -webkit-border-radius : 50%;
+  border-radius : 50%;
+  margin-top: 50px;
+  margin-bottom:10px;
+  
+}
+
+.titre_vignette{
+  font-size: 175%;
+  text-align: center;
+
+}
+
+.text_vignette{
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+#accueil {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+#titre_panier {
+    text-align: center;
+    font-size: 150%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#panier {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+#cadre_panier {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60%;
+    height: auto;
+    margin-left: 3%;
+    margin-bottom: 30px;
+    margin-right: 3%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 1%;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+}
+
+#formation_inn {
+    margin-top: 150px;
+    margin-right: 50px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#imageformation {
+    height: 350px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+#quisommesnous {
+  margin-top: 150px;
+  margin-right: 50px;
+  margin-bottom: 100px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+#logo{
+  margin-top: 50px;
+  height: 250px;
+  margin-left: 50px;
+}
+
+.sous_titre{
+  font-size: 150%;
+}
+
+.indentation {
+    text-align: justify ;
+}
+
+#article{
+    border-width: 10px;
+    border-color: black;
+    text-align: center;
+
+}
+
+#caddyvide {
+    height: 400px;
+    width: 400px;
+    align-self: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.policesympa {
+    font-size: 150%;
+    text-align: center;
+    font-weight: 650;
+}
+
+#connexion {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center
+
+}
+
+#sousconnexion {
+    width: 40%;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+    margin: 20px;
+    border-radius: 2%;
+    padding: 10px;
+}
+
+.boutton_connexion {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+}
+
+#inscription_principale {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    padding: 20px;
+    margin: 20px;
+}
+
+#main_insc{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#boutton_inscription {
+    float: right;
+    color:white;
+    width: 100px;
+    height: 50px;
+    background-color: rgba(20,72,83,0.9);
+}
+
+#boutton_inscription:hover {
+    background-color: rgb(255, 255, 255);
+    color:black;
+}
+
+#fin_de_page_inscription {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 10%;
+}
+
+.boutton_cours{
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(20,72,83,0.9 );
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+#bouton_cours {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.bouton_cours2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.presentation{
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 110%;
+}
+
+.main_middle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.photo_et_texte {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.image_presentation {
+    height: 300px;
+}
+
+.lienclassique:link {
+    color: #000;
+}
+
+.lienclassique:visited{
+    color: rgba(20,72,83,0.9);
+}
+
+.presentation_breve {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 150%;
+    margin: 5%;
+
+}
+
+#description {
+    text-align: center;
+    margin: 25px;
+    font-size: 150%;
+}
+
+

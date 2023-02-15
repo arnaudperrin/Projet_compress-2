@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<!--Cette page contient les annotations générales pour le contenu statique denotre site (cadre).-->
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        <title>
+            ProLearn 
+        </title>
+    </head>
+    <body>
+        <!--La classe 'firsbox' correspond au bandeau de tête ainsi que du menu déroulant du site, il permet de placer les éléments en son sein.-->
+
+        <div class="firstbox">
+
+            <!--Création du bandeau.-->
+
+            <div class="bandeau">
+                <div >
+                    <img id="imagetop" src="img/logo_nom.png">
+                </div>
+                <div>
+                    <h1>ProLearn</h1>
+                </div>
+                <div id="connexionetinscription">
+                    <div class="background">
+                        <a href="connexion.html">
+                            Connexion
+                        <div><span>Se connecter</span></div>
+                        </a>
+                    </div>
+                    <div>
+                        <h6 id="petittexte">Nouveau client ? Cliquez <a href="inscription.html"><u>ici</u></a>.</h6>
+                    </div>
+                    <div class="background">
+                    <a  href="panier.html"> <img class="caddy" src="img/cart.png.png">
+                        <div><span><img class="caddy" src="img/Cart_white.png"></span></div>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Nous créons ici le menu déroulant.-->
+        <nav>
+            <ul class="bar_navig">
+                <li> <a href="index.html"> Accueil </a></li>
+                <li> <a href="langues.html"> Langues </a>
+                    <!--Nous avons ici les options qui se déroulent.-->
+                    <ul class="sub-menu">
+                        <li> <a href="francais.html"> Français</a></li>
+                        <li> <a href="anglais.html"> Anglais </a></li>
+                        <li> <a href="allemand.html"> Allemand</a></li>
+                        <li> <a href="espagnol.html"> Espagnol</a></li>
+                        <li> <a href="mandarin.html"> Mandarin</a></li>
+                    </ul>
+                </li>
+                <li> <a href="informatique.html"> Informatiques </a> 
+                    <ul class="sub-menu">
+                        <li><a href="Datascience.html"> Data Science</a> </li>
+                        <li><a href="developementweb.html"> Dévelopement web</a></li>
+                        <li><a href="python.html"> Python</a> </li>
+                        <li><a href="java.html"> JAVA </a></li>
+                        <li><a href="cybersecurite.html"> Cyber sécurité </a></li>
+                    </ul>
+                </li>
+                <li> <a href="prepa.html"> Prépa concours </a> 
+                    <ul class="sub-menu">
+                        <li><a href="pass.html"> PASS </a></li>
+                        <li><a href="concourscommuniep.html"> Concours commun IEP </a> </li>
+                        <li> <a href="capes.html"> CAPES</a> </li>
+                        <li> <a href="CRPE.html"> CRPE</a></li>
+                        <li> <a href="caplp.html"> CAPLP </a></li>
+                    </ul>
+                </li>
+                <li> <a href="contact.html"> Contact </a> </li>
+            </ul>
+        </nav>
+
+        <!--La classe 'middle' correspond au milieu de la page au niveau horizontale.-->
+
+            <div class="middle">
+
+                <!--On créé ici le menu à gauche de l'écran.-->
+
+                <div id="menugauche">
+                    <div id="topmenu">
+                        <img id="imagelogo" src="img/logo.jpg">
+                    </div>
+                    <div id="bottommenu">
+                        <h3 class="centrer"><u>Menu</u></h3>
+                        <ul class="menu_vert">
+                            <br><br>
+                            <li><a href="index.html" class="menulink">Accueil</a></li><br>
+                            <br><br>
+                            <li><a href="langues.html" class="menulink">Langues</a></li><br>
+                            <br><br>
+                            <li><a href="informatique.html" class="menulink">Informatiques</a></li><br>
+                            <br><br>
+                            <li><a href="prepa.html" class="menulink">Prépa concours</a></li><br>
+                            <br><br>
+                            <li><a href="contact.html" class="menulink">Contact</a></li><br>
+                        </ul>
+                    </div>
+                </div>
+
+            <!--L'identifiant 'main' correspond à la page 'au milieu droite', c'est la page principale.-->
+
+            <div id="main">
+                <div id="accueil">
+                    <div>
+                        <!--Ici nous créons des vignettes avec des images à l'intérieur afin de présenter les différents domaines.-->
+
+                        <img src="img/globe.jpg" class="image-ronde">
+                        <div class="text_vignette">
+                            <div class="titre_vignette">
+                                 <b> Langues </b>
+                            </div>
+                            <p>
+                            <br>
+                            Vous aimez voyager ? Vous souhaitez progresser dans votre carrière professionnelle ? 
+                            Parler une autre langue ? Vous êtes au bon endroit, ProLearn vous permettra de manière simple 
+                            et adaptée à vos attentes de développer vos capacités linguistiques en Français, en Anglais, en 
+                            Allemand, en Espagnol ou encore en mandarin et ce à votre rythme.
+                            </p>
+
+                            <!--Pour chaque vignette, nous mettons un bouton pour accéder aux pages des domaines.-->
+
+                            <div class="bouton_cours2">
+                                <button class="boutton_cours" onclick="window.location.href='langues.html';">Langues</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/imagecode.jpg" class="image-ronde">
+                        <div class="text_vignette">
+                        
+                            <div class="titre_vignette">
+                                 <b> Informatique </b> 
+                            </div>
+                            <p>
+                                <br>
+                            Etudiant, manager, programmeur confirmé ou simple curieux de la tech, ProLearn s’adapte à vous !
+                             Suivez des formations en ligne pour vous former au langage PYTHON ou encore JAVA ou passer à des 
+                             formations plus poussées pour acquérir de nouvelles compétences en Data Science, en cybersécurité 
+                             ou encore en développement web. A vous de jouer !
+                            </p>
+                            <div class="bouton_cours2">
+                                <button class="boutton_cours" onclick="window.location.href='informatique.html';">Informatique</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/livre.jpg" class="image-ronde">
+                        <div class="text_vignette">
+                            <div class="titre_vignette">
+                                 <b> Préparation Concours </b>
+                            </div>
+                            <p>
+                            <br>
+                            Vous souhaitez devenir médecin ? devenir sciencespiste ? professeur des écoles, du supérieur ou en
+                            lycée professionnel ? Alors choisissez notre prépa concours ! ProLearn a su au fils des années choisir
+                            les meilleurs professeurs et professionnels directement du domaine, pour vous délivrer leurs expériences,
+                             leur retour ainsi que leurs conseils pour réussir au mieux vos concours.
+                            </p>
+                            <div class="bouton_cours2">
+                                <button class="boutton_cours" onclick="window.location.href='prepa.html';">Préparation concours</button>
+                            </div>
+                        </div>
+                    </div>
+            
+            </div>
+
+            <!--Nous présentons rapidement nos formations et en quoi elles sont innovantes.-->
+
+            <div id="formation_inn">
+                <img src="img/formations_innovantes.jpeg" id="imageformation">
+                <div class>
+                    <div>
+                        <p class="sous_titre">
+                         <b> Des formations innovantes... </b>
+                        </p>
+                    </div>
+                    <p class="indentation">
+                    <br>
+                    ProLearn est dédiée à offrir des formations en ligne de qualité pour les personnes cherchant à améliorer 
+                    leurs compétences linguistiques, en informatiques et ou encore à préparer des concours.<br><br>
+                    Notre plateforme propose des cours en ligne interactifs et accessibles à tout moment pour apprendre les langues 
+                    étrangères telles que l'anglais, l'espagnol, l'allemand, l’espagnol ou encore le mandarin. 
+                    Avec des enseignants qualifiés et des méthodes d'enseignement innovantes, nos cours vous aideront à atteindre vos 
+                    objectifs souhaités en toute confiance.<br><br>
+                    En plus des cours de langue, nous proposons également des cours d'informatique pour les débutants et les professionnels, 
+                    couvrant des sujets tels que la programmation PYTHON ou encore JAVA, le développement web, 
+                    la data science ainsi que la cybersécurité.<br><br>
+                    Enfin, pour ceux qui cherchent à se préparer aux concours, nous proposons des formations spécialisées pour la préparation 
+                    de concours universitaire telle que la première année de médecine (PASS), le concours commun au IEP mais également 
+                    les concours professionnels comme le CAPES, , CRPE et CAPLP. Ainsi que des préparations pour les concours administratifs 
+                    et les examens de certification informatique.<br><br>
+                    Nous croyons que tout le monde devrait avoir la possibilité d'apprendre et de se développer, 
+                    c'est pourquoi nous offrons des tarifs abordables et une expérience d'apprentissage en ligne agréable pour tous. 
+                    Rejoignez ProLearn dès aujourd'hui et découvrez comment nous pouvons vous aider à atteindre vos objectifs scolaire ou professionnels. 
+
+                    </p>
+                </div>
+            </div>
+
+            <!--Nous nous présentons.-->
+
+            <div id="quisommesnous">
+                <img src="img/logo_nom.png" id="logo">
+                <div>
+                    <div>
+                        <p class="sous_titre">
+                         <b> Qui sommes-nous ? </b>
+                        </p>
+                    </div>
+                    <p class="indentation">
+                    <br>
+                    ProLearn est une entreprise de formation en ligne dédiée à fournir des cours de qualité pour les personnes cherchant 
+                    à améliorer leurs compétences et à atteindre leurs objectifs professionnels. 
+                    Fondée par Louis Prunier et Arnaud Perrin fin 2014, tous deux diplômés de Sciences Po et d'une école d'ingénieur, 
+                    ProLearn combine leur expertise académique et leur passion pour l'enseignement pour créer une plateforme de formation
+                    en ligne accessible et efficace. <br><br>
+                    Notre plateforme propose une gamme de cours en ligne interactifs couvrant des sujets tels que les langues, 
+                    l’informatique ou encore la préparation de concours. Chaque cours est conçu pour fournir une expérience 
+                    d'apprentissage en ligne, agréable et efficace, avec des enseignants qualifiés, des exercices pratiques 
+                    et des évaluations régulières pour mesurer votre progression.<br><br>
+                    En plus de nos cours en ligne, nous offrons également des séances individuelles avec un mentor dédié 
+                    chaque semaine pour vous aider à atteindre vos objectifs de manière personnalisée. <br><br>
+                    Chez ProLearn, nous croyons en la puissance de l'apprentissage en ligne pour permettre à 
+                    tous de se développer et de réussir. Rejoignez-nous aujourd'hui et découvrez comment nous pouvons 
+                    vous aider à atteindre vos objectifs professionnels.
+
+
+                    </p>
+                </div>
+            </div>
+
+            <!--Nous faisons un bouton ici pour nous contacter, il renvoit vers le formulaire de contact.-->
+
+            <div id="bouton_cours">
+                <button class="boutton_cours" onclick="window.location.href='contact.html';">Nous contacter</button>
+            </div>
+            <br><br>
+            </div>
+        </div>
+
+        <!--C'est la fin de la page, le footer.-->
+
+        <div class="findepage">
+            <p class="centrer">
+            <b>Contact</b><br>
+                Téléphone: +33 9 87 23 29 11 <br>
+                Mail: prolearn-info@prolearn.com <br>
+                Adresse : 14 Avenue Montaigne 75008 PARIS <br>
+                Webmaster: Prunier Louis &amp; Perrin Arnaud
+            </p>
+            <br><br>
+            <p class="centrer">
+                <b>Service client</b> <br>
+                Téléphone: +32 800 22 00 49 <br>
+                Lundi au Samedi: 8h30/20h <br>
+                Dimanche: 9h/12h 
+            </p>
+        </div>    
+        
+    </body>
+</html>
